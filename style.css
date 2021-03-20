@@ -26,7 +26,6 @@ canvas{
     background-color:#E5E5F7;
     background-image:  linear-gradient(#CDCDDD 2.7px, transparent 2.7px), linear-gradient(to right, #CDCDDD 2.7px, #00000000 2.7px);
     background-size: 54px 54px;
-    /**/
     
     z-index:1;
     transition:1s ease;
@@ -52,6 +51,7 @@ canvas{
     color:#ff5500;
     transition:.5s ease-in-out;
     overflow:hidden;
+    user-select:none;
 }
 h1{
     margin:0;
@@ -64,7 +64,6 @@ h1{
     padding:0 10px;
     font-family:sans-serif;
     font-weight:300;
-    text-align:left;
     background:#FFE4D6;
 }
 button{

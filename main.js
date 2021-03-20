@@ -27,6 +27,8 @@ ctx.font=`${15*xF}px sans-seif`;
 cty = canv2.getContext('2d');
 cty.lineWidth =xF;
 cty.strokeStyle='#111111';
+cty.font=xF*50+'px Alternity';
+cty.fillText('Welcome',w/2*xF-cty.measureText('Welcome').width/2,h/2*xF-50*xF) ;
 cty.fillStyle='#00bfff55';
 }; fxF(2);
 //-------------------------------------------
@@ -38,8 +40,8 @@ cty.fillStyle='#00bfff55';
 let bot1={
     x:w/2, 
     y:h/2,
-    size:3, //2
-    speed:1,//1
+    size:4, 
+    speed:1,
     ang:Math.PI/2,
     score:0, 
 };
@@ -57,7 +59,7 @@ function main(){
     bot1.y+=(bot1.ang)?xF*bot1.speed*Math.cos(bot1.ang):0;
     checkR();
     writeScore();
-    reqF2=requestAnimationFrame(main);
+    reqF1=requestAnimationFrame(main);
     checkR();
 }
 //-------------------------------------------
@@ -105,7 +107,7 @@ function checkR(){
      
     //energy consumption
     bot1.speed-=.001;
-    bot1.size-=.001;
+    bot1.size-=.002;
      
     //random charge movement
     charG[0]+=(-1+Math.random()*2)*bot1.speed*xF;
@@ -123,7 +125,7 @@ function gameOver(q){
     canv1.style.zIndex=3;
     para.innerHTML=quotes[q];
     lostP.style.top='50%';
-    cancelAnimationFrame(reqF2);
+    cancelAnimationFrame(reqF1);
 };
 
 //Reserect or retray function 
@@ -131,7 +133,7 @@ retay.onclick=_=>reserect();
 function reserect(){
     canv1.style.zIndex=1;
     lostP.style.top='-50%';
-    bot1={x:w/2,y:h/2,size:2,speed:1,ang:Math.PI/2,score:0};
+    bot1={x:w/2,y:h/2,size:4,speed:1,ang:Math.PI/2,score:0};
     
 };
 //-------------------------------------------
@@ -237,11 +239,11 @@ canv2.addEventListener('touchmove',(ev)=>{
 
 canv2.addEventListener('touchend',(ev)=>{
     cty.clearRect(0,0,w*xF,h*xF);
-    cancelAnimationFrame(reqF2);
+    cancelAnimationFrame(reqF1);
 });
 canv2.addEventListener('touchcancel', (ev)=>{
     cty.clearRect(0,0,w*xF,h*xF)
-    cancelAnimationFrame(reqF2);
+    cancelAnimationFrame(reqF1);
 });
 
 /**/
