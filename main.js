@@ -81,7 +81,7 @@ function checkR(){
         charG=[Math.round(Math.random()*w),Math.round(Math.random()*h),5+Math.random()*2*xF];
         bot1.speed+=.5;
         bot1.score+=1;
-        bot1.size+=.2;
+        bot1.size+=.5;
     }
     
     //checks if bot is out of fuel (green energy) 
