@@ -1,0 +1,89 @@
+body{
+    background:;
+    font-family:sans-serif;
+}
+@font-face{
+    font-family:"Debug";
+    src:url(res/Debug.otf);
+}
+@font-face{
+    font-family:"Alternity";
+    src:url(res/Alternity.ttf);
+}
+
+canvas{
+    position:fixed;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    touch-action: none ;
+}
+#canv1{
+    /*
+    Background pattern was generated using magicPatter tool. Generate your pattern here : https://www.magicpattern.design/tools/css-backgrounds/
+    */
+    background-color:#E5E5F7;
+    background-image:  linear-gradient(#CDCDDD 2.7px, transparent 2.7px), linear-gradient(to right, #CDCDDD 2.7px, #00000000 2.7px);
+    background-size: 54px 54px;
+    /**/
+    
+    z-index:1;
+    transition:1s ease;
+}
+#canv2{
+    z-index:2;
+}
+
+#lostP{
+    background:#ffffff88;
+    backdrop-filter:blur(1px);
+    border-top:5px solid #ffffff;
+    border-bottom:5px solid #ffffff;
+    position:fixed;
+    z-index:4;
+    width:100%;
+    top:-50%;
+    left:0;
+    transform:translateY(-50%);
+    font-size:1.5em;
+    text-align:center;
+    font-weight:200;
+    color:#ff5500;
+    transition:.5s ease-in-out;
+    overflow:hidden;
+}
+h1{
+    margin:0;
+    font-weight:100;
+    font-family:alternity, sans-serif;
+    color:#232323;
+}
+
+#para{
+    padding:0 10px;
+    font-family:sans-serif;
+    font-weight:300;
+    text-align:left;
+    background:#FFE4D6;
+}
+button{
+    background:#0D5D9488;
+    border-radius:1em;
+    font-size:1.3em;
+    font-family:debug,sans-serif;
+    color:#ffffff;
+    text-shadow:1px 0 #ff4400,-1px 0 #00ffff;
+    margin:10px 0 5px 0;
+    border:1px solid #ffffff;
+    box-shadow:0 0 0 1px #0D5D9488;
+    outline:0;
+    user-select:none;
+}
+button:active{
+    border-color:#000000;
+}
+*{
+    outline:solid 0px #f00;
+    margin:0;
+}
