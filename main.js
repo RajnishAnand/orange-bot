@@ -201,7 +201,7 @@ var charG=[70,100,5];
 function plotE([x,y, r]){
     ctx.save();
     ctx.strokeStyle='#ffffff';
-    ctx.fillStyle='#00ff0055';
+    ctx.fillStyle='#25C40A';
     ctx.beginPath();
     ctx.arc(x*xF,y*xF,r*xF,0,2*Math.PI);
     ctx.fill();
