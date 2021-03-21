@@ -30,7 +30,8 @@ cty.strokeStyle='#111111';
 cty.font=xF*50+'px Alternity';
 cty.fillText('Welcome',w/2*xF-cty.measureText('Welcome').width/2,h/2*xF-50*xF) ;
 cty.fillStyle='#00bfff55';
-}; fxF(2);
+}; 
+window.onload =_=>fxF(2);
 //-------------------------------------------
 
 
@@ -41,7 +42,7 @@ let bot1={
     x:w/2, 
     y:h/2,
     size:4, 
-    speed:1,
+    speed:2,
     ang:Math.PI/2,
     score:0, 
 };
@@ -133,7 +134,7 @@ retay.onclick=_=>reserect();
 function reserect(){
     canv1.style.zIndex=1;
     lostP.style.top='-50%';
-    bot1={x:w/2,y:h/2,size:4,speed:1,ang:Math.PI/2,score:0};
+    bot1={x:w/2,y:h/2,size:4,speed:2,ang:Math.PI/2,score:0};
     
 };
 //-------------------------------------------
