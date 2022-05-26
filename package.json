@@ -1,0 +1,12 @@
+{
+  "name": "orange-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/RajnishAnand/orange-bot",
+  "author": "Rajnish Anand <63791262+RajnishAnand@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.1",
+    "socket.io": "^4.5.1"
+  }
+}
