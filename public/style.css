@@ -24,11 +24,8 @@ canvas{
     Background pattern was generated using magicPatter tool. Generate your pattern here : https://www.magicpattern.design/tools/css-backgrounds/
     */
     background-color:#E5E5F7;
-    background-image:  linear-gradient(#CDCDDD 2.7px, transparent 2.7px), linear-gradient(to right, #CDCDDD 2.7px, #00000000 2.7px);
-    background-size: 54px 54px;
     
     z-index:1;
-    transition:1s ease;
 }
 #canv2{
     z-index:2;

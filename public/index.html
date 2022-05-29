@@ -1,23 +1,19 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <meta http-equiv="refresh" content="10"> -->
     <link href="style.css" rel="stylesheet" />
     <title></title>
-</head>
+  </head>
 
-<body>
+  <body>
     <canvas id="canv1"></canvas>
     <canvas id="canv2"></canvas>
-    
-    <div id="lostP">
-        <h1>Game Over</h1>
-        <p id="para"></p>
-        <button id="retay">🕯️Reserect🧊</button>
-    </div>
-    <script src='main.js'></script>
-</body>
 
+    <script src="//cdn.jsdelivr.net/npm/eruda"></script>
+    <script src="./socket.io/socket.io.js"></script>
+    <script src="./scripts/main.js" type="module"></script>
+  </body>
 </html>
